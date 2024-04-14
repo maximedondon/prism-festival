@@ -13,7 +13,7 @@ export default function Navbar() {
         </div>
         <Link
           href=""
-          className="bg-violet text-white px-5 h-full py-2 border-2 border-black text-para font-main relative z-10"
+          className="bg-jaune px-5 h-full py-2 border-2 border-black text-para font-main relative z-10"
         >
           Tickets
         </Link>

@@ -15,7 +15,7 @@ export default function Cta({ href, text, variant }) {
     <>
       <Link
         href={href}
-        className={`px-5 py-3 border-2 border-black relative group ${colorVariant} block w-fit`}
+        className={`px-6 py-3 border-2 border-black relative group ${colorVariant} block w-fit`}
       >
         <div className="text-para font-main relative">{text}</div>
       </Link>

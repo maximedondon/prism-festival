@@ -1,16 +1,17 @@
+import { Artists } from "@/Lists/artists";
 import Card from "@/components/ArtistCard";
 import Cta from "@/components/cta";
+import Footer from "@/components/footer";
 import Nav from "@/components/nav/nav";
-import { Artists } from "@/Lists/artists";
 
 export default function Home() {
   return (
     <>
       <Nav />
       {/* heading */}
-      <div className="w-full h-fit flex flex-col gap-20 items-center text-center pt-20 pb-20">
+      <div className="w-full h-fit flex flex-col gap-20 items-center text-center pt-10 pb-20">
         <div className="flex flex-col items-center gap-0 max-w-6xl">
-          <div className="font-main text-para w-fit px-2 py-1 border-2 text-white bg-violet border-black">
+          <div className="font-main text-para w-fit px-5 py-2 border-2 text-white bg-violet border-black">
             Edition Amiens 2024
           </div>
           <div className="font-h1 text-h1 leading-h1">
@@ -23,7 +24,7 @@ export default function Home() {
             We are a design agency based in Copenhagen. With a strong belief in
             strategically founded and highly crafted digital experiences.
           </div>
-          <Cta text="Reserve ton billet" variant="green" href="" />
+          <Cta text="Reserve ton billet" variant="yellow" href="" />
         </div>
       </div>
       {/* lineup */}
@@ -32,13 +33,14 @@ export default function Home() {
           <Card name={artist.name} date={artist.date} key={index} />
         ))}
       </div>
-      <div className="flex flex-col items-center gap-5 text-center py-10 bg-violet text-white">
+      <div className="flex flex-col items-center gap-5 text-center h-screen bg-violet text-white justify-center">
         <div className="font-main text-content max-w-5xl">
           We are a design agency based in Copenhagen. With a strong belief in
           strategically founded and highly crafted digital experiences.
         </div>
         <Cta text="Reserve ton billet" variant="yellow" href="" />
       </div>
+      <Footer />
     </>
   );
 }
