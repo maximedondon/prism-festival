@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <footer className="h-screen w-full bg-black flex flex-col justify-between p-10 text-white font-main text-para">
+      <footer className="h-[80vh] w-full bg-black flex flex-col overflow-hidden justify-between p-10 text-white font-main text-para relative">
         <div className="flex justify-between">
           <Link href="mailto:bonjour@prismfestival.com">
             bonjour@prismfestival.com
@@ -25,12 +25,8 @@ export default function Footer() {
           alt="logo prism festival"
           width="1920"
           height="1080"
-          className="invert object-cover w-full h-1/2"
+          className="invert object-cover w-full translate-y-[50vh] absolute bottom-0 left-0 "
         ></Image>
-        <div className="flex justify-between">
-          <div>© 2024 Prism Festival</div>
-          <div>Site fait main avec amour</div>
-        </div>
       </footer>
     </>
   );

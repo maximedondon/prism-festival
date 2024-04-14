@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Card({ name, date }) {
   const imageBase = name.toLowerCase() + ".webp";
   const uri = "/artists/" + imageBase.split(" ").join("");
-  console.log(uri);
+  //console.log(uri);
 
   return (
     <>
