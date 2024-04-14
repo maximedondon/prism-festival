@@ -1,16 +1,23 @@
 import Card from "@/components/ArtistCard";
 import Cta from "@/components/cta";
 import Nav from "@/components/nav/nav";
+import { Artists } from "@/Lists/artists";
 
 export default function Home() {
   return (
     <>
       <Nav />
       {/* heading */}
-      <div className="w-full h-fit flex flex-col gap-20 items-center text-center pt-[50vh] pb-20">
-        <div className="font-h1 text-h1 max-w-6xl leading-h1">
-          Laisse moi te montrer ou est le son
+      <div className="w-full h-fit flex flex-col gap-20 items-center text-center pt-20 pb-20">
+        <div className="flex flex-col items-center gap-0 max-w-6xl">
+          <div className="font-main text-para w-fit px-2 py-1 border-2 text-white bg-violet border-black">
+            Edition Amiens 2024
+          </div>
+          <div className="font-h1 text-h1 leading-h1">
+            Laisse moi te montrer ou est le son
+          </div>
         </div>
+
         <div className="flex flex-col items-center gap-5">
           <div className="font-main text-content max-w-5xl">
             We are a design agency based in Copenhagen. With a strong belief in
@@ -20,10 +27,10 @@ export default function Home() {
         </div>
       </div>
       {/* lineup */}
-      <div className=" relative h-screen flex flex-wrap">
-        <Card name="Nekfeu" img="/nekfeu.jpeg" />
-        <Card name="Sofiane Pamart" img="/sofiane-pamart.jpeg" />
-        <Card name="de" img="/sofiane-pamart.jpg" />
+      <div className=" relative h-fit flex flex-wrap px-2">
+        {Artists?.map((artist, index) => (
+          <Card name={artist.name} date={artist.date} key={index} />
+        ))}
       </div>
     </>
   );
