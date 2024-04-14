@@ -1,33 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@theme {
+  --font-family-main: "obviously-regular";
+  --font-family-h1: "obviously-cond";
+  --font-size-content: 2.5rem;
+  --font-size-para: 1.2rem;
+  --font-size-h1: 20rem;
+  --line-height-h1: 17rem;
+  --background-color-violet: #9a8fe0;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "obviously-regular";
+  src: url(/ObviouslyVariable.woff2);
+  font-weight: 300;
+  font-stretch: 400%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: "obviously-cond";
+  src: url(/ObviouslyVariable.woff2);
+  font-weight: 800;
+  font-stretch: 200%;
+}
+
+@font-face {
+  font-family: "obviously-cond-med";
+  src: url(/ObviouslyVariable.woff2);
+  font-weight: 800;
+  font-stretch: 200%;
 }
