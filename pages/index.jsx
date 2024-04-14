@@ -23,14 +23,21 @@ export default function Home() {
             We are a design agency based in Copenhagen. With a strong belief in
             strategically founded and highly crafted digital experiences.
           </div>
-          <Cta text="Reserve ton billet" href="" />
+          <Cta text="Reserve ton billet" variant="green" href="" />
         </div>
       </div>
       {/* lineup */}
-      <div className=" relative h-fit flex flex-wrap px-2">
+      <div className=" relative h-fit flex flex-wrap px-2 pb-20">
         {Artists?.map((artist, index) => (
           <Card name={artist.name} date={artist.date} key={index} />
         ))}
+      </div>
+      <div className="flex flex-col items-center gap-5 text-center py-10 bg-violet text-white">
+        <div className="font-main text-content max-w-5xl">
+          We are a design agency based in Copenhagen. With a strong belief in
+          strategically founded and highly crafted digital experiences.
+        </div>
+        <Cta text="Reserve ton billet" variant="yellow" href="" />
       </div>
     </>
   );
