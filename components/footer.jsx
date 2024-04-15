@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <footer className="h-[80vh] w-full bg-black flex flex-col overflow-hidden justify-between p-10 text-white font-main text-para relative">
-        <div className="flex justify-between">
+      <footer className="h-[80vh] w-full bg-violet flex flex-col overflow-hidden justify-between p-10 text-white font-main text-para relative">
+        <div className="flex flex-col gap-10 md:gap-0 md:flex-row justify-between">
           <HoverCta
             variant="white"
             title="bonjour@prismfestival.com"
@@ -43,7 +43,7 @@ export default function Footer() {
           alt="logo prism festival"
           width="1920"
           height="1080"
-          className="invert object-cover w-full translate-y-[50vh] absolute bottom-0 left-0 "
+          className="invert object-cover w-full translate-y-[50%] absolute bottom-0 left-0 "
         ></Image>
       </footer>
     </>

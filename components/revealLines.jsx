@@ -10,7 +10,10 @@ const defaultAnimations = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { ease: [0.16, 1, 0.3, 1], duration: 1 },
+    transition: {
+      ease: [0.16, 1, 0.3, 1],
+      duration: 1,
+    },
   },
 };
 export default function Index({ text, className }) {

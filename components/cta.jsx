@@ -27,12 +27,13 @@ export default function Cta({ href, text, variant }) {
       <motion.div
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        initial={{ boxShadow: "0 0 0 0", y: 0 }}
+        initial={{ boxShadow: "0 0 0 #000000", y: 0 }}
         animate={{
           boxShadow: isHovered ? "0px 10px 0px #000000" : "0",
           y: isHovered ? "-10px" : 0,
         }}
-        transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.4 }}
+        transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.6 }}
+        className=" shadow-[0_0_0_#000000]"
       >
         <Link
           href={href}
@@ -46,7 +47,7 @@ export default function Cta({ href, text, variant }) {
               y: isHovered ? 0 : "50%",
             }}
             transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.6 }}
-            className="absolute bottom-0 left-1/2 w-1/3 translate-y-8 translate-x-5"
+            className="absolute bottom-0 left-1/2 w-1/3 translate-y-[50%]"
           >
             <Image src="/blob-music.svg" width="200" height="200" alt="" />
           </motion.div>
