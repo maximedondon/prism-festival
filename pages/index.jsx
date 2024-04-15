@@ -14,7 +14,25 @@ export default function Home() {
     <>
       <Nav />
       {/* heading */}
-      <div className="w-full h-fit flex flex-col gap-20 items-center text-center pt-10 pb-20">
+      <div className="w-full h-fit flex flex-col gap-20 items-center text-center pt-10 pb-20 relative">
+        <div className="absolute bottom-0 left-0 h-full w-1/3 -z-10">
+          <Image
+            src="/flower.svg"
+            alt=""
+            width="1920"
+            height="1080"
+            className="object-cover w-full"
+          />
+        </div>
+        <div className="absolute bottom-0 right-0 h-1/2 w-1/3 -z-10 -scale-x-100">
+          <Image
+            src="/flower.svg"
+            alt=""
+            width="1920"
+            height="1080"
+            className="object-cover w-full"
+          />
+        </div>
         <div className="flex flex-col items-center gap-0 max-w-6xl">
           <div className="font-h1 text-h1 leading-h1">
             <RevealWords text={headingText} />
