@@ -6,10 +6,10 @@ export default function Navbar() {
     <>
       <div className="w-screen h-fit sticky top-0 p-4 flex gap-5 z-50">
         <div className="border-2 w-full bg-white border-black flex justify-between text-para font-main relative px-5 py-2">
-          <HoverLine href="" title="Prism" />
+          <HoverLine variant="black" href="" title="Prism" />
           <div className="flex gap-5 h-full items-center">
-            <HoverLine href="" title="Infos pratiques" />
-            <HoverLine href="" title="Programmation" />
+            <HoverLine variant="black" href="" title="Infos pratiques" />
+            <HoverLine variant="black" href="" title="Programmation" />
           </div>
         </div>
         <Link

@@ -1,23 +1,25 @@
+import HoverCta from "@/components/HoverLine";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Footer() {
   return (
     <>
       <footer className="h-[80vh] w-full bg-black flex flex-col overflow-hidden justify-between p-10 text-white font-main text-para relative">
         <div className="flex justify-between">
-          <Link href="mailto:bonjour@prismfestival.com">
-            bonjour@prismfestival.com
-          </Link>
-          <div>
-            <div>Index</div>
-            <div>Programation</div>
-            <div>Infos Pratiques</div>
-            <div>Contact</div>
+          <HoverCta
+            variant="white"
+            title="bonjour@prismfestival.com"
+            href="mailto:bonjour@prismfestival.com"
+          />
+          <div className="flex flex-col">
+            <HoverCta variant="white" title="Index" href="" />
+            <HoverCta variant="white" title="Programmation" href="" />
+            <HoverCta variant="white" title="Infos pratiques" href="" />
+            <HoverCta variant="white" title="Contact" href="" />
           </div>
-          <div>
-            <div>Instagram</div>
-            <div>Twitter</div>
+          <div className="flex flex-col">
+            <HoverCta variant="white" title="Instagram" href="" />
+            <HoverCta variant="white" title="Twitter" href="" />
           </div>
         </div>
         <Image

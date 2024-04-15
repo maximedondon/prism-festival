@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function HoverCta({ href, title }) {
+export default function HoverCta({ href, title, variant }) {
   const [isHovered, setIsHovered] = useState(false);
   function handleMouseEnter() {
     setIsHovered(true);
@@ -11,11 +11,19 @@ export default function HoverCta({ href, title }) {
     setIsHovered(false);
   }
 
+  let colorVariant = "";
+
+  if (variant === "black") {
+    colorVariant = " bg-black";
+  } else if (variant === "white") {
+    colorVariant = "bg-white ";
+  }
+
   return (
     <>
       <Link
         href={href}
-        className="relative"
+        className="relative w-fit"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -33,7 +41,7 @@ export default function HoverCta({ href, title }) {
             y: isHovered ? -3 : "100%",
           }}
           transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.4 }}
-          className="left-0 bottom-0 h-0.5 w-full bg-black"
+          className={`left-0 bottom-0 h-0.5 w-full ${colorVariant} `}
         />
       </Link>
     </>

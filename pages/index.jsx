@@ -3,6 +3,8 @@ import Card from "@/components/ArtistCard";
 import Cta from "@/components/cta";
 import Footer from "@/components/footer";
 import Nav from "@/components/nav/nav";
+import RevealLines from "@/components/revealLines";
+import RevealWords from "@/components/revealWords";
 
 export default function Home() {
   return (
@@ -15,14 +17,16 @@ export default function Home() {
             Edition Amiens 2024
           </div>
           <div className="font-h1 text-h1 leading-h1">
-            Laisse moi te montrer ou est le son
+            <RevealWords text="Laisse moi te montrer ou est le son" />
           </div>
         </div>
 
         <div className="flex flex-col items-center gap-5">
-          <div className="font-main text-content max-w-5xl">
-            We are a design agency based in Copenhagen. With a strong belief in
-            strategically founded and highly crafted digital experiences.
+          <div className="font-main text-content max-w-5xl leading-tight">
+            <RevealLines
+              text="We are a design agency based in Copenhagen. With a strong belief in
+            strategically founded and highly crafted digital experiences."
+            />
           </div>
           <Cta text="Reserve ton billet" variant="yellow" href="" />
         </div>
@@ -34,9 +38,11 @@ export default function Home() {
         ))}
       </div>
       <div className="flex flex-col items-center gap-5 text-center h-screen bg-violet text-white justify-center">
-        <div className="font-main text-content max-w-5xl">
-          We are a design agency based in Copenhagen. With a strong belief in
-          strategically founded and highly crafted digital experiences.
+        <div className="font-main text-content max-w-5xl leading-tight">
+          <RevealLines
+            text="We are a design agency based in Copenhagen. With a strong belief in
+            strategically founded and highly crafted digital experiences."
+          />
         </div>
         <Cta text="Reserve ton billet" variant="yellow" href="" />
       </div>
