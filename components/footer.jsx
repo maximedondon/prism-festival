@@ -12,14 +12,30 @@ export default function Footer() {
             href="mailto:bonjour@prismfestival.com"
           />
           <div className="flex flex-col">
-            <HoverCta variant="white" title="Index" href="" />
+            <HoverCta variant="white" title="Index" href="/" />
             <HoverCta variant="white" title="Programmation" href="" />
-            <HoverCta variant="white" title="Infos pratiques" href="" />
-            <HoverCta variant="white" title="Contact" href="" />
+            <HoverCta
+              variant="white"
+              title="Infos pratiques"
+              href="/informations"
+            />
+            <HoverCta
+              variant="white"
+              title="Contact"
+              href="mailto:bonjour@prismfestival.com"
+            />
           </div>
           <div className="flex flex-col">
-            <HoverCta variant="white" title="Instagram" href="" />
-            <HoverCta variant="white" title="Twitter" href="" />
+            <HoverCta
+              variant="white"
+              title="Instagram"
+              href="https://instagram.com/prismfestival"
+            />
+            <HoverCta
+              variant="white"
+              title="Twitter"
+              href="https://x.com/prismfestival"
+            />
           </div>
         </div>
         <Image

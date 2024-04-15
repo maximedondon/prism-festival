@@ -40,9 +40,9 @@ export default function Cta({ href, text, variant }) {
         >
           <div className="text-para font-main relative">{text}</div>
           <motion.div
-            initial={{ scale: 0.9, y: "50%", x: "0%" }}
+            initial={{ scale: 0.8, y: "50%", x: "0%" }}
             animate={{
-              scale: isHovered ? 1 : 0.9,
+              scale: isHovered ? 1 : 0.8,
               y: isHovered ? 0 : "50%",
             }}
             transition={{ ease: [0.16, 1, 0.3, 1], duration: 0.6 }}
