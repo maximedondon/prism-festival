@@ -87,4 +87,12 @@ export const Artists = [
     name: "Tiakola",
     date: "Vendredi 1er juin",
   },
+  {
+    name: "Disiz",
+    date: "Samedi 2 juin",
+  },
+  {
+    name: "Angele",
+    date: "Samedi 2 juin",
+  },
 ];

@@ -7,7 +7,7 @@ import RevealLines from "@/components/revealLines";
 import RevealWords from "@/components/revealWords";
 import Image from "next/image";
 
-const headingText = "Laisse moi te montrer ou est le son";
+const headingText = "Laisse moi te montrer le son";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <Nav />
       {/* heading */}
       <div className="w-full h-fit flex flex-col gap-20 items-center text-center pt-10 pb-20 relative">
-        <div className="absolute bottom-0 left-0 h-full w-1/3 -z-10">
+        <div className="absolute bottom-0 left-0 w-1/4 -z-10">
           <Image
             src="/flower.svg"
             alt=""
@@ -24,23 +24,23 @@ export default function Home() {
             className="object-cover w-full"
           />
         </div>
-        <div className="absolute bottom-0 right-0 h-1/2 w-1/3 -z-10 -scale-x-100">
+        <div className="absolute bottom-0 right-0 h-1/2 w-1/4 -z-10">
           <Image
-            src="/flower.svg"
+            src="/flower2.svg"
             alt=""
             width="1920"
             height="1080"
             className="object-cover w-full"
           />
         </div>
-        <div className="flex flex-col items-center gap-0 max-w-6xl">
+        <div className="flex flex-col items-center gap-0 max-w-3xl">
           <div className="font-h1 text-h1 leading-h1">
             <RevealWords text={headingText} />
           </div>
         </div>
 
         <div className="flex flex-col items-center gap-5">
-          <div className="font-main text-content max-w-5xl leading-tight">
+          <div className="font-main text-content max-w-3xl leading-tight">
             <RevealLines text="Bienvenue au Prism, le festival qui t’émerveille chaque année aux quatre coins de la France tout en aidant les territoires en difficulté !" />
           </div>
           <Cta text="Reserve ton billet" variant="yellow" href="" />
@@ -74,7 +74,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center gap-5 text-center h-screen justify-center">
-        <div className="font-main text-content max-w-5xl leading-tight">
+        <div className="font-main text-content max-w-3xl leading-tight">
           <RevealLines text="Prism festival s’engage à te proposer des produits locaux tout le long de l’évènement et à employer des entreprises locales afin d’aider la ville." />
         </div>
         <Cta text="Reserve ton billet" variant="yellow" href="" />
