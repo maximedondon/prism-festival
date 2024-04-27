@@ -75,7 +75,7 @@ export default function Home() {
 
       <div className="flex flex-col items-center gap-5 text-center h-screen justify-center">
         <div className="font-main text-content max-w-3xl leading-tight">
-          <RevealLines text="Prism festival s’engage à te proposer des produits locaux tout le long de l’évènement et à employer des entreprises locales afin d’aider la ville." />
+          <RevealLines text="Prism festival s’engage à te proposer des produits locaux tout le long de l’événement et à employer des entreprises locales afin d’aider la ville." />
         </div>
         <Cta text="Reserve ton billet" variant="yellow" href="" />
       </div>
